@@ -10,6 +10,15 @@ const classNames = {
   const itemCountSpan = document.getElementById('item-count')
   const uncheckedCountSpan = document.getElementById('unchecked-count')
   
+
+  let contador = 0
+
+
   function addTodo() {
-    alert('Boton Add TODO clickeado!')
+    
+    const tituloTarea = prompt('Que tarea quieres agregar?')
+    if (tituloTarea != undefined){
+        contador++
+        itemCountSpan.innerHTML = contador
+    }
   }
